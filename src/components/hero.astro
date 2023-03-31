@@ -43,7 +43,17 @@ import { Icon } from "astro-icon";
   </div>
   <div class="py-6 w-full max-h-fit block">
     <div id="heroArea" class="">
-      <img src={heroImage} class="w-full" />
+      <Picture
+                src={heroImage}
+                alt="Brie Hair - Gold Coast Hair Dresser"
+                sizes="(max-width: 450px) 100vw, 400px"
+                widths={[200, 400]}
+                aspectRatio="1:1"
+                background="#ffffff"
+                fit="cover"
+                position="center"
+                class="w-full rounded-md rounded transition group-hover:-translate-y-1 group-hover:shadow-xl"
+              />
     </div>
 
   </div>
