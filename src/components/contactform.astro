@@ -10,7 +10,7 @@ import Button from "./ui/button.astro";
   id="form"
   class="needs-validation"
   novalidate>
-  <input type="hidden" name="access_key" value="1e0ffadd-2f05-471b-bbc2-36fa32793837" />
+  <input type="hidden" name="access_key" value="c384d6be-442a-4d2d-bcf7-65bc01f356f0" />
   <!-- Create your free access key from https://web3forms.com/ -->
   <input type="checkbox" class="hidden" style="display:none" name="botcheck" />
   <div class="mb-5">
@@ -23,6 +23,22 @@ import Button from "./ui/button.astro";
     />
     <div class="empty-feedback invalid-feedback text-red-400 text-sm mt-1">
       Please provide your full name.
+    </div>
+  </div>
+  <div class="mb-5">
+    <label for="phone_number" class="sr-only">Phone Number</label><input
+      id="phone_number"
+      type="number"
+      placeholder="Phone Number"
+      name="phone"
+      required
+      class="w-full px-4 py-3 border-2 placeholder:text-gray-800 rounded-md outline-none focus:ring-4 border-gray-300 focus:border-gray-600 ring-gray-100"
+    />
+    <div class="empty-feedback text-red-400 text-sm mt-1">
+      Please provide your phone number.
+    </div>
+    <div class="invalid-feedback text-red-400 text-sm mt-1">
+      Please provide a valid phone number.
     </div>
   </div>
   <div class="mb-5">
@@ -45,14 +61,14 @@ import Button from "./ui/button.astro";
     <textarea
       name="message"
       required
-      placeholder="Your Message"
+      placeholder="Anything else you'd like us to know (preferred time / day, type of haircut, any concerns)."
       class="w-full px-4 py-3 border-2 placeholder:text-gray-800 rounded-md outline-none h-36 focus:ring-4 border-gray-300 focus:border-gray-600 ring-gray-100"
     ></textarea>
     <div class="empty-feedback invalid-feedback text-red-400 text-sm mt-1">
       Please enter your message.
     </div>
   </div>
-  <Button type="submit" size="lg" block>Send Message</Button>
+  <Button type="submit" size="lg" block>Book</Button>
   <div id="result" class="mt-3 text-center"></div>
 </form>
 
