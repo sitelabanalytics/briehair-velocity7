@@ -18,8 +18,8 @@ const resolvedImageWithDomain = new URL(
 const { title } = Astro.props;
 
 const makeTitle = title
-  ? title + " | " + "Astroship"
-  : "Aidxn Design - Building better brands.";
+  ? title + " | " + "Brie Hair"
+  : "- Hair by Bryan";
 ---
 
 <!DOCTYPE html>
@@ -33,22 +33,22 @@ const makeTitle = title
     <!-- <link rel="preload" as="image" href={src} alt="Hero" /> -->
     <SEO
       title={makeTitle}
-      description="Velocity is a super-fast Web3 theme to kick-start your next business."
+      description="Gold Coast Hair Dresser with over 30 years experience."
       canonical={canonicalURL}
       twitter={{
-        creator: "@aidenwood",
-        site: "@aidxn.com",
+        creator: "@briehair",
+        site: "@briehair.com",
         card: "summary_large_image",
       }}
       openGraph={{
         basic: {
           url: canonicalURL,
           type: "website",
-          title: `Aidxn Design - Building better brands`,
+          title: `Brie Hair - Hair by Bryan`,
           image: resolvedImageWithDomain,
         },
         image: {
-          alt: "Astroship Homepage Screenshot",
+          alt: "Brie Hair Homepage Screenshot",
         },
       }}
     />
