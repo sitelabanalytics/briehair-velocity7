@@ -1,15 +1,16 @@
 ---
 // @ts-ignore
-import kueneLogo from 'assets/kuene.png';
-import muktiLogo from 'assets/mukti.png';
-import davroeLogo from 'assets/davroe.png';
+import { Icon } from "astro-icon";
 ---
 
 <div class="mt-24">
-  <h2 class="text-center text-slate-500">Using only the best products</h2>
+  <h2 class="text-center text-slate-500">Works with your technologies</h2>
   <div class="flex gap-8 md:gap-20 items-center justify-center mt-10 flex-wrap">
-    <img src={kueneLogo} class="h-16 md:h-28" />
-    <img src={muktiLogo} class="h-16 md:h-28" />
-    <img src={davroeLogo} class="h-16 md:h-28" />
+    <Icon class="h-8 md:h-12" name="simple-icons:react" />
+    <Icon class="h-8 md:h-12" name="simple-icons:svelte" />
+    <Icon class="h-8 md:h-14" name="simple-icons:tailwindcss" />
+    <Icon class="h-8 md:h-16" name="simple-icons:alpinedotjs" />
+    <Icon class="h-8 md:h-12" name="simple-icons:vercel" />
+    <Icon class="h-8 md:h-12" name="simple-icons:astro" />
   </div>
 </div>
